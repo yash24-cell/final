@@ -1,0 +1,7 @@
+wget https://github.com/aquasecurity/trivy/releases/download/v0.66.0/trivy_0.66.0_Linux-64bit.deb
+sudo dpkg -i trivy_0.66.0_Linux-64bit.deb
+sudo apt install trivy
+trivy --version
+trivy image python:3.4-alpine
+trivy image --severity HIGH python:3.4-alpine
+
